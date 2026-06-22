@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Info</title>
+    <link href="game.css" rel="stylesheet">
+       <script src="game.js" defer></script>
+</head>
+<body>
+    <!-- Header for the hero information page -->
+   <header>
+    <!-- page title -->
+       <h1>Fighter Info</h1>
+   </header> 
+
+   <!-- core content of the page can go in a main tag -->
+<main>
+    <div>
+    <!--will get the inputs for the hero's info  -->
+    <form name="frmFighter" id="frmFighter">
+            <!-- add a div so that the related label and inputs are grouped -->
+            <div>
+                <label for="txtUserName">User Name:</label> 
+                <input type="text" id="txtUserName" name="txtUserName" placeholder="User Name">
+            </div>
+            <div>
+                <label for="txtSkill">Special Skill:</label> 
+                <input type="text" id="txtSkill" name="txtSkill" placeholder=" Skill">
+            </div>
+            <div>
+                <label for="numHealth">Health:</label> 
+                <input type="number" id="numHealth" name="numHealth">
+            </div>
+            <div>
+                <label for="numPoints">Point Total:</label> 
+                <input type="number" id="numPoints" name="numPoints">
+            </div>
+
+            <!-- add the type of button so the fom does not try to save -->      
+            <button type="button" onclick="saveInfo()">Save Fighter</button>
+        </form>
+        </div>
+        <div>
+            <h2>Fighter Info</h2>
+            <div></div>
+            <textarea id="txtFighter" readonly rows="10" cols="30"></textarea>
+        </div>
+     </main>
+     
+     
+</body
+</html>
